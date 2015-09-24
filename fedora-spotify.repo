@@ -2,6 +2,5 @@
 name=Spotify digital music service
 baseurl=http://negativo17.org/repos/spotify/fedora-$releasever/$basearch/
 enabled=1
-skip_if_unavailable=1
 gpgkey=http://negativo17.org/repos/RPM-GPG-KEY-slaanesh
 gpgcheck=1
