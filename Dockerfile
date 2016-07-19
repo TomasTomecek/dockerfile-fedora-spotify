@@ -7,7 +7,7 @@ RUN dnf install -y spotify-client xorg-x11-server-utils mesa-dri-drivers && \
     dnf clean all
 
 ARG USER_ID=1000
-RUN useradd -o -u ${USER_ID} -G video spotify
+RUN useradd -o -u ${USER_ID} -G video,audio spotify
 USER spotify
 ENV HOME /home/spotify
 CMD ["spotify"]

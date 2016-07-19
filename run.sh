@@ -11,10 +11,10 @@ docker run \
     --device /dev/dri \
     --name spotify \
     -ti \
+    -v /dev/shm:/dev/shm \
+    -v /etc/machine-id:/etc/machine-id \
+    -e DBUS_SESSION_BUS_ADDRESS \
     $USER/spotify
 
 #    -v /etc/localtime:/etc/localtime:ro \
 #    -v /run:/run \
-#    -v /dev/shm:/dev/shm \
-#    -v /etc/machine-id:/etc/machine-id \
-#    -e DBUS_SESSION_BUS_ADDRESS=/run/user/1000/dbus/user_bus_socket \
